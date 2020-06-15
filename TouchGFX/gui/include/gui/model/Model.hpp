@@ -14,8 +14,10 @@ public:
     }
 
     void tick();
+    void analogUpdate();
 protected:
     ModelListener* modelListener;
 };
 
 #endif // MODEL_HPP
+

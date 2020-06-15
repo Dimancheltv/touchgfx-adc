@@ -19,14 +19,14 @@ TouchGFXGeneratedHAL.hpp:103:18:virtual void TouchGFXGeneratedHAL::flushFrameBuf
 core_cm4.h:1688:22:void __NVIC_EnableIRQ(IRQn_Type)	16	static
 core_cm4.h:1724:22:void __NVIC_DisableIRQ(IRQn_Type)	16	static,ignoring_inline_asm
 core_cm4.h:1816:22:void __NVIC_SetPriority(IRQn_Type, uint32_t)	16	static
-TouchGFXGeneratedHAL.cpp:34:6:void TouchGFXGeneratedHAL::initialize()	24	static
-TouchGFXGeneratedHAL.cpp:52:6:virtual void TouchGFXGeneratedHAL::configureInterrupts()	16	static
-TouchGFXGeneratedHAL.cpp:58:6:virtual void TouchGFXGeneratedHAL::enableInterrupts()	16	static
-TouchGFXGeneratedHAL.cpp:64:6:virtual void TouchGFXGeneratedHAL::disableInterrupts()	16	static
-TouchGFXGeneratedHAL.cpp:70:6:virtual void TouchGFXGeneratedHAL::enableLCDControllerInterrupt()	16	static
-TouchGFXGeneratedHAL.cpp:81:11:virtual uint16_t* TouchGFXGeneratedHAL::getTFTFrameBuffer() const	16	static
-TouchGFXGeneratedHAL.cpp:86:6:virtual void TouchGFXGeneratedHAL::setTFTFrameBuffer(uint16_t*)	16	static
-TouchGFXGeneratedHAL.cpp:94:6:virtual void TouchGFXGeneratedHAL::flushFrameBuffer(const touchgfx::Rect&)	16	static
-TouchGFXGeneratedHAL.cpp:101:10:void HAL_LTDC_LineEventCallback(LTDC_HandleTypeDef*)	16	static
+TouchGFXGeneratedHAL.cpp:33:6:void TouchGFXGeneratedHAL::initialize()	24	static
+TouchGFXGeneratedHAL.cpp:51:6:virtual void TouchGFXGeneratedHAL::configureInterrupts()	16	static
+TouchGFXGeneratedHAL.cpp:57:6:virtual void TouchGFXGeneratedHAL::enableInterrupts()	16	static
+TouchGFXGeneratedHAL.cpp:63:6:virtual void TouchGFXGeneratedHAL::disableInterrupts()	16	static
+TouchGFXGeneratedHAL.cpp:69:6:virtual void TouchGFXGeneratedHAL::enableLCDControllerInterrupt()	16	static
+TouchGFXGeneratedHAL.cpp:80:11:virtual uint16_t* TouchGFXGeneratedHAL::getTFTFrameBuffer() const	16	static
+TouchGFXGeneratedHAL.cpp:85:6:virtual void TouchGFXGeneratedHAL::setTFTFrameBuffer(uint16_t*)	16	static
+TouchGFXGeneratedHAL.cpp:93:6:virtual void TouchGFXGeneratedHAL::flushFrameBuffer(const touchgfx::Rect&)	16	static
+TouchGFXGeneratedHAL.cpp:100:10:void HAL_LTDC_LineEventCallback(LTDC_HandleTypeDef*)	16	static
 TouchGFXGeneratedHAL.hpp:28:7:TouchGFXGeneratedHAL::~TouchGFXGeneratedHAL()	16	static
 TouchGFXGeneratedHAL.hpp:28:7:virtual TouchGFXGeneratedHAL::~TouchGFXGeneratedHAL()	16	static

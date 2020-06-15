@@ -210,6 +210,9 @@
     <ClCompile Include="..\..\generated\gui_generated\src\screen1_screen\Screen1ViewBase.cpp">
       <Filter>Source Files\generated\gui_generated\screen1_screen</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\gui\src\model\freertos.c">
+      <Filter>Source Files\gui\model</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="$(ApplicationRoot)\assets\texts\texts.xlsx">

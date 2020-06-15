@@ -1,5 +1,5 @@
 TouchGFX/target/TouchGFXHAL.o: ../TouchGFX/target/TouchGFXHAL.cpp \
- ../TouchGFX/target/TouchGFXHAL.hpp \
+ C:/Users/Dell/STM32CubeIDE/workspace_1.2.0/doctor0/TouchGFX/target/TouchGFXHAL.hpp \
  C:/Users/Dell/STM32CubeIDE/workspace_1.2.0/doctor0/TouchGFX/target/generated/TouchGFXGeneratedHAL.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/HAL.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/Types.hpp \
@@ -48,6 +48,8 @@ TouchGFX/target/TouchGFXHAL.o: ../TouchGFX/target/TouchGFXHAL.cpp \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h \
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_crc.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma2d.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
@@ -66,7 +68,7 @@ TouchGFX/target/TouchGFXHAL.o: ../TouchGFX/target/TouchGFXHAL.cpp \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/OSWrappers.hpp
 
-../TouchGFX/target/TouchGFXHAL.hpp:
+C:/Users/Dell/STM32CubeIDE/workspace_1.2.0/doctor0/TouchGFX/target/TouchGFXHAL.hpp:
 
 C:/Users/Dell/STM32CubeIDE/workspace_1.2.0/doctor0/TouchGFX/target/generated/TouchGFXGeneratedHAL.hpp:
 
@@ -163,6 +165,10 @@ C:/Users/Dell/STM32CubeIDE/workspace_1.2.0/doctor0/TouchGFX/target/generated/Tou
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h:
 
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h:
+
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h:
+
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h:
 
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_crc.h:
 

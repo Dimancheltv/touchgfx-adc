@@ -109,12 +109,12 @@ void OSWrappers::waitForVSync()
 {
     if (vsync_queue)
     {
-        uint32_t dummyGet;
-        // First make sure the queue is empty, by trying to remove an element with 0 timeout.
-        osMessageQueueGet(vsync_queue, &dummyGet, 0, 0);
+      uint32_t dummyGet;
+      // First make sure the queue is empty, by trying to remove an element with 0 timeout.
+      osMessageQueueGet(vsync_queue, &dummyGet, 0, 0);
 
-        // Then, wait for next VSYNC to occur.
-        osMessageQueueGet(vsync_queue, &dummyGet, 0, osWaitForever);
+      // Then, wait for next VSYNC to occur.
+      osMessageQueueGet(vsync_queue, &dummyGet, 0, osWaitForever);
     }
 }
 

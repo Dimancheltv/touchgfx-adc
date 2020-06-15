@@ -14,7 +14,7 @@
   *
   ******************************************************************************
   */
-#include "TouchGFXHAL.hpp"
+#include <TouchGFXHAL.hpp>
 
 /* USER CODE BEGIN TouchGFXHAL.cpp */
 

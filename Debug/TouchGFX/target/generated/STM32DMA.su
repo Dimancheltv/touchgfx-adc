@@ -15,8 +15,8 @@ HAL.hpp:169:10:void touchgfx::HAL::signalDMAInterrupt()	16	static
 HAL.hpp:297:17:static touchgfx::LCD& touchgfx::HAL::lcd()	4	static
 STM32DMA.hpp:90:18:virtual void STM32F4DMA::signalDMAInterrupt()	16	static
 STM32DMA.cpp:34:26:HAL_StatusTypeDef HAL_DMA2D_SetMode(DMA2D_HandleTypeDef*, uint32_t, uint32_t, uint32_t)	24	static
-STM32DMA.cpp:47:17:void DMA2D_XferCpltCallback(DMA2D_HandleTypeDef*)	16	static
-STM32DMA.cpp:52:17:void DMA2D_XferErrorCallback(DMA2D_HandleTypeDef*)	16	static
+STM32DMA.cpp:47:13:void DMA2D_XferCpltCallback(DMA2D_HandleTypeDef*)	16	static
+STM32DMA.cpp:52:13:void DMA2D_XferErrorCallback(DMA2D_HandleTypeDef*)	16	static
 BlitOp.hpp:52:8:touchgfx::BlitOp::BlitOp()	16	static
 STM32DMA.cpp:59:1:STM32F4DMA::STM32F4DMA()	24	static
 STM32DMA.cpp:63:1:STM32F4DMA::~STM32F4DMA()	16	static

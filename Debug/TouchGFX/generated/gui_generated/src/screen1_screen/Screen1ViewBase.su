@@ -38,26 +38,32 @@ Widget.hpp:53:13:touchgfx::Widget::~Widget()	16	static
 Widget.hpp:53:13:virtual touchgfx::Widget::~Widget()	16	static
 Widget.hpp:74:18:virtual void touchgfx::Widget::getLastChild(int16_t, int16_t, touchgfx::Drawable**)	24	static
 Image.hpp:49:5:touchgfx::Image::Image(const touchgfx::Bitmap&)	16	static
-AbstractButton.hpp:35:7:touchgfx::AbstractButton::~AbstractButton()	16	static
-AbstractButton.hpp:35:7:virtual touchgfx::AbstractButton::~AbstractButton()	16	static
-Button.hpp:53:13:touchgfx::Button::~Button()	16	static
-Button.hpp:53:13:virtual touchgfx::Button::~Button()	16	static
-ToggleButton.hpp:61:18:virtual void touchgfx::ToggleButton::setBitmaps(const touchgfx::Bitmap&, const touchgfx::Bitmap&)	24	static
 TypedText.hpp:79:14:touchgfx::TypedText::TypedText(touchgfx::TypedTextId)	16	static
+TypedText.hpp:135:17:const touchgfx::Font* touchgfx::TypedText::getFont() const	16	static
+TypedText.hpp:220:10:void touchgfx::TypedText::assertValid() const	16	static
 TextArea.hpp:56:5:touchgfx::TextArea::TextArea()	16	static
+TextArea.hpp:70:18:virtual touchgfx::Rect touchgfx::TextArea::getSolidRect() const	24	static
 TextArea.hpp:84:17:void touchgfx::TextArea::setColor(touchgfx::colortype)	16	static
+TextArea.hpp:143:18:virtual void touchgfx::TextArea::setBaselineY(int16_t)	40	static
+TextArea.hpp:162:18:virtual void touchgfx::TextArea::setXBaselineY(int16_t, int16_t)	16	static
 TextArea.hpp:177:17:void touchgfx::TextArea::setLinespacing(int16_t)	16	static
+TextArea.hpp:297:15:touchgfx::TypedText touchgfx::TextArea::getTypedText() const	16	static
+TextArea.hpp:46:7:touchgfx::TextArea::~TextArea()	16	static
+TextArea.hpp:46:7:virtual touchgfx::TextArea::~TextArea()	16	static
+TextAreaWithWildcard.hpp:47:5:touchgfx::TextAreaWithWildcardBase::TextAreaWithWildcardBase()	16	static
+TextAreaWithWildcard.hpp:35:7:touchgfx::TextAreaWithWildcardBase::~TextAreaWithWildcardBase()	16	static
+TextAreaWithWildcard.hpp:35:7:virtual touchgfx::TextAreaWithWildcardBase::~TextAreaWithWildcardBase()	16	static
+TextAreaWithWildcard.hpp:75:5:touchgfx::TextAreaWithOneWildcard::TextAreaWithOneWildcard()	16	static
+TextAreaWithWildcard.hpp:115:10:void touchgfx::TextAreaWithOneWildcard::setWildcard(const UnicodeChar*)	16	static
 View.hpp:39:7:touchgfx::View<Screen1Presenter>::~View()	16	static
 View.hpp:39:7:virtual touchgfx::View<Screen1Presenter>::~View()	16	static
-Screen1ViewBase.hpp:18:13:Screen1ViewBase::~Screen1ViewBase()	16	static
-Screen1ViewBase.hpp:18:13:virtual Screen1ViewBase::~Screen1ViewBase()	16	static
+Screen1ViewBase.hpp:17:13:Screen1ViewBase::~Screen1ViewBase()	16	static
+Screen1ViewBase.hpp:17:13:virtual Screen1ViewBase::~Screen1ViewBase()	16	static
 Color.hpp:54:22:static touchgfx::colortype touchgfx::Color::getColorFrom24BitRGB(uint8_t, uint8_t, uint8_t)	24	static
 Screen1ViewBase.cpp:9:1:Screen1ViewBase::Screen1ViewBase()	48	static
-Screen1ViewBase.cpp:28:6:virtual void Screen1ViewBase::setupScreen()	16	static
+Screen1ViewBase.cpp:26:6:virtual void Screen1ViewBase::setupScreen()	16	static
 View.hpp:50:5:touchgfx::View<T>::View() [with T = Screen1Presenter]	16	static
 Image.hpp:36:7:touchgfx::Image::~Image()	16	static
 Image.hpp:36:7:virtual touchgfx::Image::~Image()	16	static
-ToggleButton.hpp:34:7:touchgfx::ToggleButton::~ToggleButton()	16	static
-ToggleButton.hpp:34:7:virtual touchgfx::ToggleButton::~ToggleButton()	16	static
-TextArea.hpp:46:7:touchgfx::TextArea::~TextArea()	16	static
-TextArea.hpp:46:7:virtual touchgfx::TextArea::~TextArea()	16	static
+TextAreaWithWildcard.hpp:63:7:touchgfx::TextAreaWithOneWildcard::~TextAreaWithOneWildcard()	16	static
+TextAreaWithWildcard.hpp:63:7:virtual touchgfx::TextAreaWithOneWildcard::~TextAreaWithOneWildcard()	16	static

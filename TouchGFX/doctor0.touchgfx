@@ -4,7 +4,7 @@
       {
         "Components": [
           {
-            "RelativeFilename": "neon.png",
+            "RelativeFilename": "adcbg.png",
             "Alpha": 255,
             "Name": "image1",
             "X": 0,
@@ -19,39 +19,25 @@
             "Moveable": false
           },
           {
-            "InitialStatePressed": false,
-            "Pressed": "__designer\\Blue_Togglebars_Toggle_round_large_button_ON.png",
-            "Released": "__designer\\Blue_Togglebars_Toggle_round_large_button_OFF.png",
-            "Alpha": 255,
-            "Style": "Style4",
-            "Name": "toggleButton1",
-            "X": 96,
-            "Y": 172,
-            "Width": 128,
-            "Height": 38,
-            "Type": "ToggleButton",
-            "Visible": true,
-            "Draggable": false,
-            "Clickable": false,
-            "Fadeable": false,
-            "Moveable": false
-          },
-          {
-            "TextId": "SingleUseId1",
+            "TextId": "SingleUseId2",
             "TextRotation": "0",
             "Color": {
-              "Red": 235,
+              "Red": 239,
               "Green": 80,
-              "Blue": 245
+              "Blue": 255
             },
             "Alpha": 255,
-            "AutoSize": true,
+            "AutoSize": false,
             "LineSpacing": 0,
-            "Name": "textArea1",
-            "X": 121,
-            "Y": 11,
-            "Width": 79,
-            "Height": 25,
+            "Wildcard1": {
+              "UseBuffer": true,
+              "BufferSize": 10
+            },
+            "Name": "textAreaAD",
+            "X": 82,
+            "Y": 96,
+            "Width": 196,
+            "Height": 49,
             "Type": "TextArea",
             "Visible": true,
             "Draggable": false,
@@ -69,7 +55,7 @@
     "CustomContainerDefinitions": [],
     "TextEntries": [
       {
-        "TextEntryId": "SingleUseId1",
+        "TextEntryId": "SingleUseId2",
         "IsResource": false
       }
     ],

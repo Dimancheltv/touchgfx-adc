@@ -10,19 +10,17 @@ Screen1ViewBase::Screen1ViewBase()
 {
 
     image1.setXY(0, 0);
-    image1.setBitmap(touchgfx::Bitmap(BITMAP_NEON_ID));
+    image1.setBitmap(touchgfx::Bitmap(BITMAP_ADCBG_ID));
 
-    toggleButton1.setXY(96, 172);
-    toggleButton1.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_TOGGLEBARS_TOGGLE_ROUND_LARGE_BUTTON_OFF_ID), touchgfx::Bitmap(BITMAP_BLUE_TOGGLEBARS_TOGGLE_ROUND_LARGE_BUTTON_ON_ID));
-
-    textArea1.setXY(121, 11);
-    textArea1.setColor(touchgfx::Color::getColorFrom24BitRGB(235, 80, 245));
-    textArea1.setLinespacing(0);
-    textArea1.setTypedText(touchgfx::TypedText(T_SINGLEUSEID1));
+    textAreaAD.setPosition(82, 96, 196, 49);
+    textAreaAD.setColor(touchgfx::Color::getColorFrom24BitRGB(239, 80, 255));
+    textAreaAD.setLinespacing(0);
+    textAreaADBuffer[0] = 0;
+    textAreaAD.setWildcard(textAreaADBuffer);
+    textAreaAD.setTypedText(touchgfx::TypedText(T_SINGLEUSEID2));
 
     add(image1);
-    add(toggleButton1);
-    add(textArea1);
+    add(textAreaAD);
 }
 
 void Screen1ViewBase::setupScreen()

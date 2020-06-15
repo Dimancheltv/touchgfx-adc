@@ -21,7 +21,7 @@
 #include <touchgfx/hal/HAL.hpp>
 #include <touchgfx/lcd/LCD.hpp>
 #include <cassert>
-#include "STM32DMA.hpp"
+#include <STM32DMA.hpp>
 
 using namespace touchgfx;
 
@@ -31,7 +31,7 @@ using namespace touchgfx;
 
 extern DMA2D_HandleTypeDef hdma2d;
 
-static HAL_StatusTypeDef HAL_DMA2D_SetMode(DMA2D_HandleTypeDef* hdma2d, uint32_t mode, uint32_t color, uint32_t offset)
+static HAL_StatusTypeDef HAL_DMA2D_SetMode(DMA2D_HandleTypeDef *hdma2d, uint32_t mode, uint32_t color, uint32_t offset)
 {
     assert_param(IS_DMA2D_ALL_INSTANCE(hdma2d->Instance));
 
@@ -44,15 +44,15 @@ static HAL_StatusTypeDef HAL_DMA2D_SetMode(DMA2D_HandleTypeDef* hdma2d, uint32_t
 
 extern "C" {
 
-    static void DMA2D_XferCpltCallback(DMA2D_HandleTypeDef* handle)
-    {
-        touchgfx::HAL::getInstance()->signalDMAInterrupt();
-    }
+static void DMA2D_XferCpltCallback(DMA2D_HandleTypeDef* handle)
+{
+    touchgfx::HAL::getInstance()->signalDMAInterrupt();
+}
 
-    static void DMA2D_XferErrorCallback(DMA2D_HandleTypeDef* handle)
-    {
-        assert(0);
-    }
+static void DMA2D_XferErrorCallback(DMA2D_HandleTypeDef* handle)
+{
+    assert(0);
+}
 
 }
 
@@ -80,13 +80,13 @@ void STM32F4DMA::initialize()
 BlitOperations STM32F4DMA::getBlitCaps()
 {
     return static_cast<BlitOperations>(BLIT_OP_FILL
-                                       | BLIT_OP_FILL_WITH_ALPHA
-                                       | BLIT_OP_COPY
-                                       | BLIT_OP_COPY_WITH_ALPHA
-                                       | BLIT_OP_COPY_ARGB8888
-                                       | BLIT_OP_COPY_ARGB8888_WITH_ALPHA
-                                       | BLIT_OP_COPY_A4
-                                       | BLIT_OP_COPY_A8);
+                                        | BLIT_OP_FILL_WITH_ALPHA
+                                        | BLIT_OP_COPY
+                                        | BLIT_OP_COPY_WITH_ALPHA
+                                        | BLIT_OP_COPY_ARGB8888
+                                        | BLIT_OP_COPY_ARGB8888_WITH_ALPHA
+                                        | BLIT_OP_COPY_A4
+                                        | BLIT_OP_COPY_A8);
 }
 
 void STM32F4DMA::setupDataCopy(const BlitOp& blitOp)
@@ -229,17 +229,14 @@ void STM32F4DMA::setupDataFill(const BlitOp& blitOp)
                       (bitDepth == 16) ? DMA2D_RGB565 : DMA2D_RGB888,
                       blitOp.dstLoopStride - blitOp.nSteps);
 
-    if (dma2dTransferMode == DMA2D_M2M_BLEND)
-    {
+    if (dma2dTransferMode == DMA2D_M2M_BLEND) {
         hdma2d.LayerCfg[1].AlphaMode = DMA2D_REPLACE_ALPHA;
         hdma2d.LayerCfg[1].InputAlpha = color;
         hdma2d.LayerCfg[1].InputColorMode = CM_A8;
         hdma2d.LayerCfg[0].InputOffset = blitOp.dstLoopStride - blitOp.nSteps;
         hdma2d.LayerCfg[0].InputColorMode = (bitDepth == 16) ? CM_RGB565 : CM_RGB888;
         HAL_DMA2D_ConfigLayer(&hdma2d, 0);
-    }
-    else
-    {
+    } else {
         hdma2d.LayerCfg[1].InputColorMode = dma2dColorMode;
         hdma2d.LayerCfg[1].InputOffset = 0;
     }

@@ -16,3 +16,8 @@ void Screen1Presenter::deactivate()
 {
 
 }
+
+void Screen1Presenter::analogUpdate(uint32_t value)
+{
+	view.analogUpdate(value);
+}
